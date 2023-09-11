@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>💵Conversor de moedas💵</h1>
+    <form id="conversorMoedas">
+        <label for="moedaOrigem">moeda de origem:</label>
+        <select id="moedaOrigem" required>
+            <option value=""disabled selected>selecione...</option>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">Dolar Americano (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+        </select>
+
+        <label for="moedaDestino">moeda de origem:</label>
+        <select id="moedaDestino" required>
+            <option value=""disabled selected>selecione...</option>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">Dolar Americano (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+        </select>
+
+        <label for="valor">A Converter:</label> 
+        <input type="number" id="valor" step="0.01" placeholder="ex: 480.35">
+
+        <p id="resultado"></p>
+    <form>
+    <script src="java.js"></script>
+</body>
+</html>
